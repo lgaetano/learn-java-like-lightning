@@ -3,14 +3,12 @@
 public class Main {
 
     public static void main(String[] args) {
-        Triangle triangleA = new Triangle(1, 3);
-        Triangle triangleB = new Triangle(3, 3);
+        Student student1 = new Student("Lia", "Bobia", 2022, 3.65, "Classics");
 
-        System.out.println(triangleA.area());
-        System.out.println(triangleB.area());
-
-        System.out.println(Triangle.numSides);
-        System.out.println(triangleA.numSides);
+        System.out.println(student1.firstName);
+        System.out.println(student1.gradYear);
+        student1.incrementGradYear();
+        System.out.println(student1.gradYear);
     }
 
 }
